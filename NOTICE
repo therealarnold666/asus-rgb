@@ -1,0 +1,12 @@
+ASUS RGB is an independent community project, not affiliated with ASUS.
+
+Hardware protocol fields and device layouts were checked against public
+G-Helper and OpenRGB reference implementations. No upstream binaries, entire
+source trees, user captures or proprietary firmware are bundled.
+
+References:
+https://github.com/seerge/g-helper/tree/main/app/Peripherals
+https://github.com/CalcProgrammer1/OpenRGB/tree/master/Controllers/AsusAuraUSBController
+https://github.com/CalcProgrammer1/OpenRGB/tree/master/Controllers/ENESMBusController
+
+This project is distributed under GPL-3.0-or-later. See LICENSE.

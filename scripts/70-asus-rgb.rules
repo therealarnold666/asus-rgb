@@ -1,0 +1,9 @@
+# Active local session access to supported lighting-control interfaces.
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0b05", ATTRS{idProduct}=="1ace", ENV{ASUS_RGB_OMNI}="1"
+SUBSYSTEM=="hidraw", ENV{ASUS_RGB_OMNI}=="1", ATTRS{bInterfaceNumber}=="02", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0b05", ATTRS{idProduct}=="18c5", ENV{ASUS_RGB_THRONE}="1"
+SUBSYSTEM=="hidraw", ENV{ASUS_RGB_THRONE}=="1", ATTRS{bInterfaceNumber}=="00", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0b05", ATTRS{idProduct}=="19af", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0b05", ATTRS{idProduct}=="1889", TAG+="uaccess"
+# Existing ENE DRAM controllers on the AMD PIIX4 memory bus only.
+SUBSYSTEM=="i2c-dev", ATTRS{name}=="SMBus PIIX4 adapter port 0 at 0b00", TAG+="uaccess"
